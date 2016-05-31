@@ -2,7 +2,7 @@
  * Copyright (c) 2013 The Center for Public Integrity®. See LICENSE.
  */
 
-package cg.m.nodetika;
+package org.icij.nodetika;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -210,7 +210,6 @@ public class NodeTika {
 		final Object sortByPosition = options.get("pdfSortByPosition");
 		final Object spacingTolerance = options.get("pdfSpacingTolerance");
 		final Object suppressDuplicateOverlappingText = options.get("pdfSuppressDuplicateOverlappingText");
-		final Object useNonSequentialParser = options.get("pdfUseNonSequentialParser");
 
 		if (averageCharTolerance != null) {
 			pdfParserConfig.setAverageCharTolerance(Float.parseFloat(averageCharTolerance.toString()));
@@ -246,10 +245,6 @@ public class NodeTika {
 
 		if (suppressDuplicateOverlappingText != null) {
 			pdfParserConfig.setSuppressDuplicateOverlappingText((Boolean) suppressDuplicateOverlappingText);
-		}
-
-		if (useNonSequentialParser != null) {
-			pdfParserConfig.setUseNonSequentialParser((Boolean) useNonSequentialParser);
 		}
 	}
 

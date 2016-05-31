@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package cg.m.nodetika;
+package org.icij.nodetika;
 
 import org.apache.tika.sax.WriteOutContentHandler;
 import org.xml.sax.Attributes;
