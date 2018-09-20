@@ -1,5 +1,5 @@
 {
-	"name": "tika",
+	"name": "@conscia/tika",
 	"version": "1.6.1",
 	"description": "Apache Tika bridge. Text extraction, metadata extraction, mimetype detection and language detection.",
 	"scripts": {

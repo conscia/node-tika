@@ -464,7 +464,7 @@ suite('http extraction tests', function() {
 
 suite('ftp extraction tests', function() {
 	test('extract from text file over ftp', function(done) {
-		this.timeout(5000);
+		this.timeout(10000);
 		tika.text('ftp://ftp.ietf.org/rfc/rfc959.txt', function(err, text) {
 			assert.ifError(err);
 			assert.ok(-1 !== text.indexOf('FILE TRANSFER PROTOCOL'));
