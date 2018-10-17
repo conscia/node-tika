@@ -3,20 +3,12 @@
 	<parent>
 		<groupId>org.apache.tika</groupId>
 		<artifactId>tika-parent</artifactId>
-		<version>1.19</version>
+		<version>1.19.1</version>
 		<relativePath>../tika-parent/pom.xml</relativePath>
 	</parent>
 
 	<artifactId>node-tika</artifactId>
 	<name>Tika Bindings for Node.js</name>
-
-	<repositories>
-		<repository>
-			<id>jbig2.googlecode</id>
-			<name>JBIG2 ImageIO-Plugin repository at googlecode.com</name>
-			<url>http://jbig2-imageio.googlecode.com/svn/maven-repository</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -40,9 +32,9 @@
 
 		<!-- Optional PDFBox dependency for parsing JBIG2 format images in PDF files. -->
 		<dependency>
-			<groupId>com.levigo.jbig2</groupId>
-			<artifactId>levigo-jbig2-imageio</artifactId>
-			<version>1.6.5</version>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>jbig2-imageio</artifactId>
+			<version>3.0.2</version>
 		</dependency>
 
 		<!-- Optional PDFBox dependency for parsing JPEG2000 and TIFF format images in PDF files. -->

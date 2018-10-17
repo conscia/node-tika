@@ -1,5 +1,5 @@
 {
-	"name": "tika",
+	"name": "@conscia/tika",
 	"version": "1.8.0",
 	"lockfileVersion": 1,
 	"requires": true,
