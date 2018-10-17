@@ -2,7 +2,7 @@
 
 Provides text extraction, metadata extraction, mime-type detection, text-encoding detection and language 
 detection. All via a native Java bridge with the Apache Tika content-analysis toolkit. Bundles [Tika 
-1.19](http://tika.apache.org/1.19/index.html).
+1.19.1](http://tika.apache.org/1.19.1/index.html).
 
 [![Build Status](https://semaphoreci.com/api/v1/conscia/node-tika/branches/master/badge.svg)](https://semaphoreci.com/conscia/node-tika)
 
