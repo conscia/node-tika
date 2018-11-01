@@ -452,8 +452,9 @@ suite('error handling tests', () => {
   });
 });
 
-suite('http extraction tests', () => {
-  test('extract from pdf over http', done => {
+suite('http extraction tests', function () {
+  test('extract from pdf over http', function (done) {
+    this.timeout(10000);
     tika.text('https://tools.ietf.org/pdf/rfc2324.pdf', (err, text) => {
       assert.ifError(err);
       assert.ok(-1 !== text.indexOf('Hyper Text Coffee Pot Control Protocol'));

@@ -30,6 +30,7 @@
 			"version": "2.6.0",
 			"resolved": "https://registry.npmjs.org/async/-/async-2.6.0.tgz",
 			"integrity": "sha512-xAfGg1/NTLBBKlHFmnd7PlmUW9KhVQIUuSrYem9xzFUZy13ScvtyGGejaae9iAVRiRq9+Cx7DPFaAAhCpyxyPw==",
+			"dev": true,
 			"requires": {
 				"lodash": "^4.14.0"
 			}
@@ -145,9 +146,9 @@
 			"integrity": "sha1-FQStJSMVjKpA20onh8sBQRmU6k8="
 		},
 		"glob": {
-			"version": "7.1.2",
-			"resolved": "https://registry.npmjs.org/glob/-/glob-7.1.2.tgz",
-			"integrity": "sha512-MJTUg1kjuLeQCJ+ccE4Vpa6kKVXkPYJ2mOCQyUuKLcLQsdrMCpBPUi8qVE6+YuaJkozeA9NusTAw3hLr8Xe5EQ==",
+			"version": "7.1.3",
+			"resolved": "https://registry.npmjs.org/glob/-/glob-7.1.3.tgz",
+			"integrity": "sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==",
 			"requires": {
 				"fs.realpath": "^1.0.0",
 				"inflight": "^1.0.4",
@@ -268,15 +269,30 @@
 			}
 		},
 		"java": {
-			"version": "0.10.0",
-			"resolved": "https://registry.npmjs.org/java/-/java-0.10.0.tgz",
-			"integrity": "sha1-maEtayIZ03MuTqzyMkwGfkKEyqY=",
+			"version": "0.11.0",
+			"resolved": "https://registry.npmjs.org/java/-/java-0.11.0.tgz",
+			"integrity": "sha512-RIx44OqCMRMcAcPIF4htuw1QESuZyopDWYZ40pUIfbpfwUUROLT1JyK5/4XYWA2HuW0NuUtRmhuzZ1znDqsuaQ==",
 			"requires": {
-				"async": "2.6.0",
+				"async": "2.6.1",
 				"find-java-home": "0.2.0",
-				"glob": "7.1.2",
-				"lodash": "4.17.5",
-				"nan": "2.9.2"
+				"glob": "7.1.3",
+				"lodash": "4.17.11",
+				"nan": "2.11.1"
+			},
+			"dependencies": {
+				"async": {
+					"version": "2.6.1",
+					"resolved": "https://registry.npmjs.org/async/-/async-2.6.1.tgz",
+					"integrity": "sha512-fNEiL2+AZt6AlAw/29Cr0UDe4sRAHCpEHh54WMz+Bb7QfNcFw4h3loofyJpLeQs4Yx7yuqu/2dLgM5hKOs6HlQ==",
+					"requires": {
+						"lodash": "^4.17.10"
+					}
+				},
+				"lodash": {
+					"version": "4.17.11",
+					"resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.11.tgz",
+					"integrity": "sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg=="
+				}
 			}
 		},
 		"js-yaml": {
@@ -316,7 +332,8 @@
 		"lodash": {
 			"version": "4.17.5",
 			"resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.5.tgz",
-			"integrity": "sha512-svL3uiZf1RwhH+cWrfZn3A4+U58wbP0tGVTLQPbjplZxZ8ROD9VLuNgsRniTlLe7OlSqR79RUehXgpBW/s0IQw=="
+			"integrity": "sha512-svL3uiZf1RwhH+cWrfZn3A4+U58wbP0tGVTLQPbjplZxZ8ROD9VLuNgsRniTlLe7OlSqR79RUehXgpBW/s0IQw==",
+			"dev": true
 		},
 		"lodash._baseassign": {
 			"version": "3.2.0",
@@ -477,9 +494,9 @@
 			"dev": true
 		},
 		"nan": {
-			"version": "2.9.2",
-			"resolved": "https://registry.npmjs.org/nan/-/nan-2.9.2.tgz",
-			"integrity": "sha512-ltW65co7f3PQWBDbqVvaU1WtFJUsNW7sWWm4HINhbMQIyVyzIeyZ8toX5TC5eeooE6piZoaEh4cZkueSKG3KYw=="
+			"version": "2.11.1",
+			"resolved": "https://registry.npmjs.org/nan/-/nan-2.11.1.tgz",
+			"integrity": "sha512-iji6k87OSXa0CcrLl9z+ZiYSuR2o+c0bGuNmXdrhTQTakxytAFsC56SArGYoiHlJlFoHSnvmhpceZJaXkVuOtA=="
 		},
 		"nopt": {
 			"version": "3.0.6",
