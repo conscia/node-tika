@@ -1,6 +1,6 @@
 {
 	"name": "@conscia/tika",
-	"version": "1.12.1",
+	"version": "1.12.2",
 	"description": "Apache Tika bridge. Text extraction, metadata extraction, mimetype detection and language detection.",
 	"scripts": {
 		"test": "mocha --ui tdd test"
