@@ -208,6 +208,7 @@ public class NodeTika {
 		final Object sortByPosition = options.get("pdfSortByPosition");
 		final Object spacingTolerance = options.get("pdfSpacingTolerance");
 		final Object suppressDuplicateOverlappingText = options.get("pdfSuppressDuplicateOverlappingText");
+    final Object ocrStrategy = options.get("ocrStrategy");
 
 		if (averageCharTolerance != null) {
 			pdfParserConfig.setAverageCharTolerance(Float.parseFloat(averageCharTolerance.toString()));
@@ -246,6 +247,10 @@ public class NodeTika {
 		if (suppressDuplicateOverlappingText != null) {
 			pdfParserConfig.setSuppressDuplicateOverlappingText((Boolean) suppressDuplicateOverlappingText);
 		}
+
+    if (ocrStrategy != null) {
+      pdfParserConfig.setOcrStrategy(ocrStrategy.toString());
+    }
 	}
 
 	private static void fillOcrOptions(TesseractOCRConfig ocrConfig, Map<String, Object> options) {
@@ -266,6 +271,7 @@ public class NodeTika {
 		final Object ocrMinFileSize = options.get("ocrMinFileSize");
 		final Object ocrPageSegmentationMode = options.get("ocrPageSegmentationMode");
 		final Object ocrTimeout = options.get("ocrTimeout");
+    final Object ocrOutputType = options.get("ocrOutputType");
 
 		if (ocrPath != null) {
 			ocrConfig.setTesseractPath(ocrPath.toString());
@@ -286,6 +292,10 @@ public class NodeTika {
 		if (ocrTimeout != null) {
 			ocrConfig.setTimeout(Integer.parseInt(ocrTimeout.toString()));
 		}
+
+    if (ocrOutputType != null) {
+      ocrConfig.setOutputType(ocrOutputType.toString());
+    }
 	}
 
 	private static void disableOcr(TesseractOCRConfig ocrConfig) {
