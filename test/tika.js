@@ -155,7 +155,8 @@ suite('document tests', () => {
       assert.ok(meta);
       assert.deepEqual(meta.resourceName, ['file.pdf']);
       assert.deepEqual(meta['Content-Type'], ['application/pdf']);
-      assert.deepEqual(meta.producer, ['LibreOffice 4.1']);
+      assert.deepEqual(meta["pdf:docinfo:producer"], ['LibreOffice 4.1']);
+      assert.deepEqual(meta["pdf:docinfo:created"], ['2013-12-06T21:26:36Z']);
       done();
     });
   });
@@ -174,7 +175,8 @@ suite('document tests', () => {
       assert.ok(meta);
       assert.deepEqual(meta.resourceName, ['pdf']);
       assert.deepEqual(meta['Content-Type'], ['application/pdf']);
-      assert.deepEqual(meta.producer, ['LibreOffice 4.1']);
+      assert.deepEqual(meta["pdf:docinfo:producer"], ['LibreOffice 4.1']);
+      assert.deepEqual(meta["pdf:docinfo:created"], ['2013-12-06T21:26:36Z']);
       done();
     });
   });
@@ -193,7 +195,9 @@ suite('document tests', () => {
       assert.ok(meta);
       assert.deepEqual(meta.resourceName, ['file.pdf']);
       assert.deepEqual(meta['Content-Type'], ['application/pdf']);
-      assert.deepEqual(meta.producer, ['LibreOffice 4.1']);
+      assert.deepEqual(meta["pdf:docinfo:producer"], ['LibreOffice 4.1']);
+      assert.deepEqual(meta["pdf:docinfo:created"], ['2013-12-06T21:28:08Z']);
+      assert.equal(meta["pdf:encrypted"], 'true');
       done();
     });
   });
